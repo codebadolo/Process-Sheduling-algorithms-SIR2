@@ -124,8 +124,8 @@ void afficher_processus(Processus processus[], int n) {
 }
 #endif
 ```
-`main.c`
-##Gère l'entrée utilisateur et appelle les fonctions de planification.
+main.c
+# Gère l'entrée utilisateur et appelle les fonctions de planification.
 ```c
 #include <stdio.h>
 #include "ordonnancement_processus.h"
