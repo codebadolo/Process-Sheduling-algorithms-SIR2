@@ -40,7 +40,8 @@ void afficher_processus(Processus processus[], int n);
 
 #endif // ORDONNANCEMENT_PROCESSUS_H
 ```
-
+`ordonnancement_processus.c`
+Implémente les fonctions de planification SJF et SRTF, ainsi que la fonction d'affichage des résultats
 ```c
 #include <stdio.h>
 #include "ordonnancement_processus.h"
@@ -161,6 +162,8 @@ int main() {
     return 0;
 }
 ```
+`Makefile`
+Automatise la compilation du projet.
 ```makefile
 CC = gcc
 CFLAGS = -Wall
@@ -184,4 +187,29 @@ ordonnancement_processus.o: ordonnancement_processus.c ordonnancement_processus.
 # Cible pour nettoyer les fichiers objets et l'exécutable
 clean:
 	rm -f *.o srtf
+```
+# Guide de Compilation
+
+Pour compiler le projet, utilisez le Makefile fourni. Ouvrez un terminal dans le répertoire du projet et exécutez la commande suivante :
+
+```sh
+./srtf
+```
+Le programme vous demandera d'entrer le nombre de processus, suivi des temps d'arrivée et des durées pour chaque processus. Ensuite, vous pourrez choisir l'algorithme de planification à utiliser (1 pour SJF, 2 pour SRTF).
+
+# Exemple
+```sh
+Entrez le nombre de processus : 3
+Entrez le temps d'arrivée et la durée pour le processus 1 : 0 5
+Entrez le temps d'arrivée et la durée pour le processus 2 : 1 3
+Entrez le temps d'arrivée et la durée pour le processus 3 : 2 8
+Choisissez l'algorithme de planification (1 pour SJF, 2 pour SRTF) : 1
+
+ID      Arrivée Durée   Départ  Complétion      Attente Retour
+1       0       5       0       5               0       5
+2       1       3       5       8               4       7
+3       2       8       8       16              6       14
+
+Temps d'attente moyen: 3.33
+Temps de retour moyen: 8.67
 ```
