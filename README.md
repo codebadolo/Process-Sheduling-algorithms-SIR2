@@ -201,9 +201,9 @@ Le programme vous demandera d'entrer le nombre de processus, suivi des temps d'a
 Pour valider le fonctionnement des algorithmes SJF et SRTF, des tests ont été réalisés en utilisant différents ensembles de processus avec des temps d'arrivée et des durées variables
 ## Test 1: Trois processus
 Entrée:
-	Processus 1 : Temps d'arrivée = 0, Durée = 5
-	Processus 2 : Temps d'arrivée = 1, Durée = 3
-	Processus 3 : Temps d'arrivée = 2, Durée = 8
+	- Processus 1 : Temps d'arrivée = 0, Durée = 5
+	- Processus 2 : Temps d'arrivée = 1, Durée = 3
+	- Processus 3 : Temps d'arrivée = 2, Durée = 8
 
  ## Résultats avec SJF:
 ```sh
