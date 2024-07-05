@@ -197,14 +197,16 @@ Pour compiler le projet, utilisez le Makefile fourni. Ouvrez un terminal dans le
 ```
 Le programme vous demandera d'entrer le nombre de processus, suivi des temps d'arrivée et des durées pour chaque processus. Ensuite, vous pourrez choisir l'algorithme de planification à utiliser (1 pour SJF, 2 pour SRTF).
 
-# Exemple
-```sh
-Entrez le nombre de processus : 3
-Entrez le temps d'arrivée et la durée pour le processus 1 : 0 5
-Entrez le temps d'arrivée et la durée pour le processus 2 : 1 3
-Entrez le temps d'arrivée et la durée pour le processus 3 : 2 8
-Choisissez l'algorithme de planification (1 pour SJF, 2 pour SRTF) : 1
+# Tests et Résultats
+Pour valider le fonctionnement des algorithmes SJF et SRTF, des tests ont été réalisés en utilisant différents ensembles de processus avec des temps d'arrivée et des durées variables
+## Test 1: Trois processus
+Entrée:
+	Processus 1 : Temps d'arrivée = 0, Durée = 5
+	Processus 2 : Temps d'arrivée = 1, Durée = 3
+	Processus 3 : Temps d'arrivée = 2, Durée = 8
 
+ ## Résultats avec SJF:
+```sh
 ID      Arrivée Durée   Départ  Complétion      Attente Retour
 1       0       5       0       5               0       5
 2       1       3       5       8               4       7
@@ -212,4 +214,18 @@ ID      Arrivée Durée   Départ  Complétion      Attente Retour
 
 Temps d'attente moyen: 3.33
 Temps de retour moyen: 8.67
+
 ```
+## Résultats avec SRTF:
+```sh
+ID      Arrivée Durée   Départ  Complétion      Attente Retour
+1       0       5       0       1               0       1
+2       1       3       1       4               0       3
+3       2       8       4       12              2       10
+1       0       5       12      16              11      16
+
+Temps d'attente moyen: 3.67
+Temps de retour moyen: 7.67
+```
+
+## ceci met fin a notre phase de test  
