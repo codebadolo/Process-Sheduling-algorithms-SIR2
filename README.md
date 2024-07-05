@@ -161,7 +161,7 @@ int main() {
     return 0;
 }
 ```
-```makdfile
+```makefile
 CC = gcc
 CFLAGS = -Wall
 OBJ = main.o ordonnancement_processus.o
