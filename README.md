@@ -39,7 +39,7 @@ void calculer_srtf(Processus processus[], int n);
 void afficher_processus(Processus processus[], int n);
 
 #endif // ORDONNANCEMENT_PROCESSUS_H
-
+```
 
 ```c
 #include <stdio.h>
