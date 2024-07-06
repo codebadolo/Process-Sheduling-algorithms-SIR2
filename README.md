@@ -1,5 +1,6 @@
 
 # Projet de Planification des Processus
+# Developpement et test 
 
 Ce projet implémente et simule les algorithmes de planification des processus Shortest Job First (SJF) et Shortest Remaining Time First (SRTF) en langage C. Il vise à illustrer les principes théoriques de ces algorithmes et à évaluer leurs performances.
 
