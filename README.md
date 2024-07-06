@@ -229,3 +229,9 @@ Temps de retour moyen: 7.67
 ```
 
 ## ceci met fin a notre phase de test  
+# Annexe: Sources et Documentations
+## Geeks for Geeks :
+Shortest Job First (SJF) Scheduling )  ( https://www.geeksforgeeks.org/shortest-remaining-time-first-preemptive-sjf-scheduling-algorithm/ 
+Shortest Remaining Time First (SRTF) Scheduling ( (https://www.geeksforgeeks.org/shortest-remaining-time-first-preemptive-sjf-scheduling-algorithm/) 
+## Github: https://github.com/Madhavarora05/SJF-CPU-SCHEDULING/blob/main/sjf.c
+
